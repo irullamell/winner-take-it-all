@@ -10,8 +10,8 @@
     "node": "20.x"
   },
   "dependencies": {
-    "code-server": "^4.24.0",
-    "express": "^4.19.2",
-    "http-proxy-middleware": "^3.0.0"
+    "code-server": "latest",
+    "express": "latest",
+    "http-proxy-middleware": "latest"
   }
 }
