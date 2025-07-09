@@ -1,5 +1,5 @@
 {
-  "name": "vscode-web-express",
+  "name": "miaw",
   "version": "1.0.0",
   "description": "Serve VS Code Web lewat Express secara otomatis",
   "type": "module",
