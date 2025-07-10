@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>VS Code Web Standalone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- ikon & stylesheet bawaan VS Code -->
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/vscode-web@1.91.1/dist/code-192.png">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/vscode-web@1.91.1/dist/out/vs/workbench/workbench.web.main.css">
+
+  <style>html,body,#app{height:100%;margin:0}</style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- AMD loader bawaan VS Code -->
+  <script src="https://cdn.jsdelivr.net/npm/vscode-web@1.91.1/dist/out/vs/loader.js"></script>
+  <script>
+    /* Konfig path modul */
+    require.config({
+      baseUrl: 'https://cdn.jsdelivr.net/npm/vscode-web@1.91.1/dist/out'
+    });
+
+    /* Bootstrapping workbench */
+    require(['vs/workbench/workbench.web.main'], () => {
+      // Workbench otomatis mount ke <body>; tidak perlu kode ekstra
+    });
+  </script>
+</body>
+</html>
