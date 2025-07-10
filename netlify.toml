@@ -1,0 +1,8 @@
+[build]
+  command = ""      # tidak ada proses build
+  publish = "."     # posisikan ke root repo/folder
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
